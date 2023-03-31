@@ -9,7 +9,7 @@ const Collaborators = () => {
         <h1>Colaboradores</h1>
         <ul>
             <li>
-                <p>Dr. Navarro, C.</p>
+                <p>Dr. Navarro, C. <a href=".\documents\lorem.pdf" target="_blank" >goloso </a></p> 
             </li>
             <li>
                 <p>Dra. Hitschfeld, N.</p>
