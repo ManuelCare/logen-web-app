@@ -1,0 +1,26 @@
+{
+    "people": [
+      {
+        "name": "John Smith",
+        "title": "Software Engineer",
+        "bio": "John Smith is a software engineer with 10 years of experience in the industry. He has worked on a variety of projects ranging from web applications to mobile apps. In his free time, John enjoys playing basketball and hiking.",
+        "image": "https://example.com/images/john_smith.jpg",
+        "website": "https://example.com/john_smith"
+      },
+      {
+        "name": "Jane Doe",
+        "title": "Data Analyst",
+        "bio": "Jane Doe is a data analyst with 5 years of experience in the field. She has worked with large datasets and has experience in data visualization and analysis. In her free time, Jane enjoys painting and playing guitar.",
+        "image": "https://example.com/images/jane_doe.jpg",
+        "website": "https://example.com/jane_doe"
+      },
+      {
+        "name": "Bob Johnson",
+        "title": "Project Manager",
+        "bio": "Bob Johnson is a project manager with 8 years of experience managing software development projects. He is experienced in agile methodologies and has led successful projects in a variety of industries. In his free time, Bob enjoys cooking and gardening.",
+        "image": "https://example.com/images/bob_johnson.jpg",
+        "website": "https://example.com/bob_johnson"
+      }
+    ]
+  }
+  
