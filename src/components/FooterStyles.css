@@ -1,0 +1,15 @@
+.footer {
+    background-color: #592941;
+    color: #B2D3A8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-bar {
+    height: 2px;
+    background-color: #B2D3A8;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }

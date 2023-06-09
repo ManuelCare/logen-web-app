@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Delgado, J.",
+        "links" : [
+            {
+                "name" : "tesis magister",
+                "href" : "./documents/Tesis_Jorge_Delgado_2022.pdf"
+            }
+        ]
+    },
+    {
+        "name": "Keith, A.",
+        "links" : [
+            {
+                "name" : "tesis magister",
+                "href" : "./documents/Acelerando_el_calculo_del_convex_hull_AlanKeith.pdf"
+            }
+        ]
+    }
+]

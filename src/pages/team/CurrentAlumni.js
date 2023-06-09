@@ -1,19 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pregradoData from "../data/CurrentAlumni/pregrado.json"
-import magisterdata from "../data/CurrentAlumni/magister.json"
+import pregradoData from "../../data/team/pregrado.json"
+import magisterdata from "../../data/team/magister.json"
 const CurrentAlumni = () => {
     return (
         <>
             <Link to="/">Inicio</Link>
             <h1>Alumnos Actuales</h1>
             <br/>
-            <h2>Pregado</h2>
+            <h2>Pregrado</h2>
             <ul>
                 {pregradoData.map((data, index) => (
                     <div key={index}>
                         <li>
-                            <p>{data.name}</p>
+                            <p>
+                                {data.name}
+                                {data.links?.map((linksData, index) => (
+                                    <> <a href={linksData.href} target="_blank">[{linksData.name}]</a></>
+                                ))}
+                            </p>
                         </li>
                     </div>
                 ))}
@@ -24,7 +29,12 @@ const CurrentAlumni = () => {
                 {magisterdata.map((data, index) => (
                     <div key={index}>
                         <li>
-                            <p>{data.name}</p>
+                            <p>
+                                {data.name}
+                                {data.links?.map((linksData, index) => (
+                                    <a href={linksData.href} target="_blank"> [{linksData.name}]</a>
+                                ))}
+                            </p>
                         </li>
                     </div>
                 ))}

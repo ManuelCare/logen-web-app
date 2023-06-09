@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Letelier, B.",
+        "links" : [
+            {
+                "name" : "articulo de tesis",
+                "href" : "./documents/articulo_tesis_pregrado_BLetelierL.pdf"
+            }
+        ]
+        
+    },
+    {
+        "name": "Pacheco, S.",
+        "links" : [
+            {
+                "name" : "articulo de tesis",
+                "href" : "./documents/WTree_SebastianP.pdf"
+            }
+        ]
+    }
+]

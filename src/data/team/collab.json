@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Dr. Navarro, C.",
+        "links" : [
+            {
+                "name" : "sitio web UACh",
+                "href" : "https://inf.uach.cl/equipo/cristobal-navarro-guerrero/"
+            }
+        ]
+    },
+    {
+        "name": "Dra. Hitschfeld, N.",
+        "links" : [
+            {
+                "name" : "sitio web uchile",
+                "href" : "https://users.dcc.uchile.cl/~nancy/"
+            }
+        ]
+    }
+]

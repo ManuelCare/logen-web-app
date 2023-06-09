@@ -1,56 +1,50 @@
 
 import people_es from '../data/people_es.json';
 import projects_es from '../data/projects_es.json';
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Home.css"
+import dog from "./dog.jpg"
 
 const Home = () => {
-    return <div className="App">
-    <div id="introduccion"> 
+  return <div className="home-container">
       <h1>Logen</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet eros vitae risus iaculis, eget accumsan dolor fermentum. Sed vitae nibh sit amet felis lacinia elementum. Suspendisse consectetur, quam eget lacinia porttitor, augue ipsum dapibus eros, et facilisis nunc sem in dui. Duis ut lorem luctus, bibendum nulla vitae, aliquam massa. Pellentesque at tellus eget nunc iaculis faucibus. Maecenas vitae justo est. Sed eget augue nec massa fringilla lobortis. Aliquam quis elit sit amet dolor tincidunt elementum ac eu dolor. Donec sagittis orci vel lectus rutrum eleifend. Integer ac ex fermentum, sagittis lacus vel, ultricies eros. Vestibulum sit amet mauris a nulla accumsan ultrices.</p>
-    </div>
-    <br/>
-    <div id="proyectos">
-      <h2>Proyectos</h2>
-      {projects_es.map((data, index) => (
-      <div key={data.title}>
-        <h3>{data.title}</h3>
-        <p>{data.description}</p>
-        {data.links?.map((linksData,index)=>(
-            <a href={linksData.url} target="_blank">[{linksData.name}]</a>
-        ))}
-
+      <div id="introduccion">
+        <p>Logen es un grupo de investigación ubicado en Valdivia, Los Ríos, Chile,
+          con foco en la creación de algoritmos de compresión para big data eficientes y ecológicos.
+        </p>
       </div>
-    ))}
-    </div>
-    <br/>
-    <div id="personas">
-      <h2>Equipo</h2>
+      <div className="sec-bar"></div>
+      <div id="horizontal-section">
+        <div id="proyectos">
+          <h2>Proyectos</h2>
           <ul>
-          <li><Link to="/current-alumni">Alumnos Actuales</Link></li>
-          <li><Link to="/ex-alumni">Ex-Alumnos</Link></li>
-          <li><Link to="/collaborators">Colaboradores</Link></li>
+            <li><Link to="/current-projects">Proyectos Actuales</Link></li>
+            <li><Link to="/closed-projects">Proyectos Cerrados</Link></li>
+            <li><Link to="/collaboration-projects">Proyectos de Colaboración</Link></li>
           </ul>
+        </div>
+        <div id="personas">
+          <h2>Equipo</h2>
+          <ul>
+            <li>Investigador principal: Ferrada, H. <a href="https://inf.uach.cl/equipo/hector-ferrada/" target="_blank"> [sitio web UACh]</a></li>
+            <li><Link to="/current-alumni">Alumnos Actuales</Link></li>
+            <li><Link to="/ex-alumni">Ex-Alumnos</Link></li>
+            <li><Link to="/collaborators">Colaboradores</Link></li>
+          </ul>
+        </div>
+      </div>
+      <div id="publicaciones">
+        <h2>Publicaciones</h2>
+      </div>
+      <div id="contacto">
+        <h2>Contacto</h2>
+        <p>Si desea contactarnos, le ofrecemos los siguientes medios de comunicación:</p>
+        <ul>
+          <li>Teléfono: 1234567890</li>
+          <li>Email: correo@real.com</li>
+        </ul>
+      </div>
     </div>
-    <br/>
-    <div id="publicaciones">
-      <h2>Publicaciones</h2>
-    </div>
-    <br/>
-    <div id="contacto">
-      <h2>Contacto</h2>
-      <p>Si desea contactarnos, le ofrecemos los siguientes medios de comunicación:</p>
-      <ul>
-        <li>Teléfono: 1234567890</li>
-        <li>Email: correo@real.com</li>
-      </ul>
-    </div>
+};
 
-    <div id="pie-de-pagina">
-      <p>Dpie de pagina</p>
-    </div>
-  </div>;
-  };
-  
-  export default Home;
-  
+export default Home;
